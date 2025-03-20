@@ -4,13 +4,62 @@ namespace App\Controllers;
 
 use App\Database\Database;
 
+/**
+ * Controlador para gestionar facciones de la saga El Señor de los Anillos
+ *
+ * Este controlador maneja las operaciones CRUD relacionadas con las diferentes
+ * facciones que existen en la Tierra Media. Permite crear, consultar, actualizar
+ * y eliminar facciones, asegurando la integridad de los datos y validando
+ * las entradas según las reglas del negocio.
+ *
+ * @package App\Controllers
+ * @version 1.0.0
+ */
 class FactionController {
+    /** 
+     * @var \PDO Instancia de la conexión a la base de datos 
+     */
     private $db;
 
+    /**
+     * Constructor del controlador de facciones
+     *
+     * Inicializa la conexión a la base de datos utilizando el patrón Singleton
+     * para asegurar una única instancia de la conexión.
+     */
     public function __construct() {
         $this->db = Database::getInstance()->getConnection();
     }
 
+    /**
+     * Crea una nueva facción en la base de datos
+     *
+     * Este método valida y procesa los datos recibidos para crear una nueva facción.
+     * Realiza las siguientes validaciones:
+     * - Verifica que todos los campos requeridos estén presentes
+     * - Comprueba que no exista otra facción con el mismo nombre
+     * - Valida que la descripción tenga al menos 10 caracteres
+     *
+     * @throws \Exception Si faltan campos requeridos (código 400)
+     * @throws \Exception Si ya existe una facción con el mismo nombre (código 409)
+     * @throws \Exception Si la descripción es muy corta (código 400)
+     * @throws \Exception Si hay un error en la base de datos (código 500)
+     *
+     * @return void
+     *
+     * @example
+     * Ejemplo de JSON esperado en la petición:
+     * {
+     *     "faction_name": "Elfos de Rivendell",
+     *     "description": "Una de las últimas casas acogedoras al este del mar. Hogar de la sabiduría élfica en la Tierra Media."
+     * }
+     *
+     * Ejemplo de respuesta exitosa (código 201):
+     * {
+     *     "message": "Facción creada exitosamente",
+     *     "id": 1
+     * }
+     */
     public function create() {
         // Obtener datos del cuerpo de la petición
         $data = json_decode(file_get_contents('php://input'), true);

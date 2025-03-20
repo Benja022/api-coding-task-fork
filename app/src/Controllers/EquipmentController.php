@@ -4,13 +4,37 @@ namespace App\Controllers;
 
 use App\Database\Database;
 
+/**
+ * Controlador para gestionar equipamiento de la saga El Señor de los Anillos
+ * 
+ * Este controlador maneja las operaciones CRUD relacionadas con armas, armaduras
+ * y otros objetos que pueden ser utilizados por los personajes.
+ */
 class EquipmentController {
+    /** @var \PDO Conexión a la base de datos */
     private $db;
 
+    /**
+     * Constructor del controlador de equipamiento
+     */
     public function __construct() {
         $this->db = Database::getInstance()->getConnection();
     }
 
+    /**
+     * Crea un nuevo equipo
+     * 
+     * @throws \Exception Si hay errores de validación o en la base de datos
+     * @return void
+     * 
+     * @example
+     * Ejemplo de JSON esperado:
+     * {
+     *     "name": "Anduril",
+     *     "type": "arma",
+     *     "made_by": "Elrond"
+     * }
+     */
     public function create() {
         // Obtener datos del cuerpo de la petición
         $data = json_decode(file_get_contents('php://input'), true);
@@ -31,7 +55,7 @@ class EquipmentController {
                 throw new \Exception("Ya existe un equipo con el nombre '{$data['name']}'", 409);
             }
 
-            // Validar que el tipo sea válido (podemos añadir una lista de tipos permitidos)
+            // Validar que el tipo sea válido
             $validTypes = ['arma', 'armadura', 'objeto mágico', 'herramienta'];
             if (!in_array(strtolower($data['type']), $validTypes)) {
                 throw new \Exception("Tipo de equipo no válido. Tipos permitidos: " . implode(', ', $validTypes), 400);

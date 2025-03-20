@@ -1,7 +1,8 @@
 {
-  "name": "freepikcompany/api-coding-task",
-  "description": "An API Backend coding task",
-  "license": "MIT",
+  "name": "graphicresources/itpg-api-coding-task",
+  "description": "API Backend Coding Task",
+  "type": "project",
+  "license": "proprietary",
   "authors": [
     {
       "name": "Freepik Company Backend Guild",
@@ -11,7 +12,11 @@
   "require": {
     "php": "^8.0",
     "ext-json": "*",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "apigen/apigen": "dev-master"
+  },
+  "require-dev": {
+    "apigen/apigen": "dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -20,5 +25,7 @@
   },
   "config": {
     "allow-plugins": true
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

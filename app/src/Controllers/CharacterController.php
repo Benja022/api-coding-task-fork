@@ -4,13 +4,36 @@ namespace App\Controllers;
 
 use App\Database\Database;
 
+/**
+ * Controlador para gestionar personajes de la saga El Señor de los Anillos
+ */
 class CharacterController {
+    /** @var \PDO Conexión a la base de datos */
     private $db;
 
+    /**
+     * Constructor del controlador de personajes
+     */
     public function __construct() {
         $this->db = Database::getInstance()->getConnection();
     }
 
+    /**
+     * Crea un nuevo personaje
+     * 
+     * @throws \Exception Si hay errores de validación o en la base de datos
+     * @return void
+     * 
+     * @example
+     * Ejemplo de JSON esperado:
+     * {
+     *     "name": "Aragorn",
+     *     "birth_date": "2931-03-01",
+     *     "kingdom": "Gondor",
+     *     "equipment_id": 1,
+     *     "faction_id": 1
+     * }
+     */
     public function create() {
         // Obtener datos del cuerpo de la petición
         $data = json_decode(file_get_contents('php://input'), true);
@@ -31,14 +54,14 @@ class CharacterController {
                 throw new \Exception("Ya existe un personaje con el nombre '{$data['name']}'", 409);
             }
 
-            // Validar que el equipment_id existe
+            // Verificar que el equipment_id existe
             $stmt = $this->db->prepare("SELECT id FROM equipments WHERE id = ?");
             $stmt->execute([$data['equipment_id']]);
             if (!$stmt->fetch()) {
                 throw new \Exception("El equipment_id no existe", 400);
             }
 
-            // Validar que el faction_id existe
+            // Verificar que el faction_id existe
             $stmt = $this->db->prepare("SELECT id FROM factions WHERE id = ?");
             $stmt->execute([$data['faction_id']]);
             if (!$stmt->fetch()) {

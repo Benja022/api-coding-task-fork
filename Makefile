@@ -59,3 +59,6 @@ composer-require: ## Añade nuevas dependencias de producción
 
 composer-require-dev: ## Añade nuevas dependencias de desarrollo
 	docker run --rm -ti -v ${PWD}/app:/app -w /app $(IMAGE_NAME):$(IMAGE_TAG_DEV) composer require --dev --verbose
+
+docs: ## Genera la documentación de la API
+	docker run --rm -v ${PWD}/app:/app -w /app $(IMAGE_NAME):$(IMAGE_TAG_DEV) vendor/bin/apigen src --output public/docs
