@@ -4,40 +4,39 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "010caa477a8ca99de37b95cbf11202f4",
+    "content-hash": "71b72381fd8031701fa6af0c21a3f473",
     "packages": [
         {
             "name": "apigen/apigen",
-            "version": "dev-master",
+            "version": "v7.0.0-alpha.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ApiGen/ApiGen.git",
-                "reference": "aa151a961053d20e46d2c7da65cbb03c130d12ff"
+                "reference": "9435f6c5d5b4310e68195e79839c374c48c06890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ApiGen/ApiGen/zipball/aa151a961053d20e46d2c7da65cbb03c130d12ff",
-                "reference": "aa151a961053d20e46d2c7da65cbb03c130d12ff",
+                "url": "https://api.github.com/repos/ApiGen/ApiGen/zipball/9435f6c5d5b4310e68195e79839c374c48c06890",
+                "reference": "9435f6c5d5b4310e68195e79839c374c48c06890",
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": "^2.0",
                 "ext-ctype": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-tokenizer": "*",
-                "jetbrains/phpstorm-stubs": "^2024.2",
+                "jetbrains/phpstorm-stubs": "^2022.3",
                 "latte/latte": "^3.0",
                 "league/commonmark": "^2.3",
                 "nette/di": "^3.1",
                 "nette/finder": "^3.0",
                 "nette/schema": "^1.2",
                 "nette/utils": "^4.0",
-                "nikic/php-parser": "^5.3",
+                "nikic/php-parser": "^4.15",
                 "php": "^8.1",
-                "phpstan/php-8-stubs": "^0.4.0",
+                "phpstan/php-8-stubs": "^0.3.55",
                 "phpstan/phpdoc-parser": "^1.16",
-                "symfony/console": "^6.4"
+                "symfony/console": "^6.0"
             },
             "replace": {
                 "symfony/polyfill-ctype": "*",
@@ -50,7 +49,6 @@
                 "phpstan/phpstan": "^1.9",
                 "tracy/tracy": "^2.9"
             },
-            "default-branch": true,
             "bin": [
                 "bin/apigen"
             ],
@@ -85,9 +83,9 @@
             "description": "PHP source code API generator.",
             "support": {
                 "issues": "https://github.com/ApiGen/ApiGen/issues",
-                "source": "https://github.com/ApiGen/ApiGen/tree/master"
+                "source": "https://github.com/ApiGen/ApiGen/tree/v7.0.0-alpha.6"
             },
-            "time": "2025-02-21T14:27:46+00:00"
+            "time": "2023-04-07T12:13:38+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -222,23 +220,24 @@
         },
         {
             "name": "jetbrains/phpstorm-stubs",
-            "version": "v2024.3",
+            "version": "v2022.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JetBrains/phpstorm-stubs.git",
-                "reference": "0e82bdfe850c71857ee4ee3501ed82a9fc5d043c"
+                "reference": "6b568c153cea002dc6fad96285c3063d07cab18d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JetBrains/phpstorm-stubs/zipball/0e82bdfe850c71857ee4ee3501ed82a9fc5d043c",
-                "reference": "0e82bdfe850c71857ee4ee3501ed82a9fc5d043c",
+                "url": "https://api.github.com/repos/JetBrains/phpstorm-stubs/zipball/6b568c153cea002dc6fad96285c3063d07cab18d",
+                "reference": "6b568c153cea002dc6fad96285c3063d07cab18d",
                 "shasum": ""
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "v3.64.0",
-                "nikic/php-parser": "v5.3.1",
-                "phpdocumentor/reflection-docblock": "5.6.0",
-                "phpunit/phpunit": "11.4.3"
+                "friendsofphp/php-cs-fixer": "@stable",
+                "nikic/php-parser": "@stable",
+                "php": "^8.0",
+                "phpdocumentor/reflection-docblock": "@stable",
+                "phpunit/phpunit": "@stable"
             },
             "type": "library",
             "autoload": {
@@ -263,9 +262,9 @@
                 "type"
             ],
             "support": {
-                "source": "https://github.com/JetBrains/phpstorm-stubs/tree/v2024.3"
+                "source": "https://github.com/JetBrains/phpstorm-stubs/tree/v2022.3"
             },
-            "time": "2024-12-14T08:03:12+00:00"
+            "time": "2022-10-17T09:21:37+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1132,27 +1131,25 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.4.0",
+            "version": "v4.19.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494"
+                "reference": "715f4d25e225bc47b293a8b997fe6ce99bf987d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/715f4d25e225bc47b293a8b997fe6ce99bf987d2",
+                "reference": "715f4d25e225bc47b293a8b997fe6ce99bf987d2",
                 "shasum": ""
             },
             "require": {
-                "ext-ctype": "*",
-                "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=7.4"
+                "php": ">=7.1"
             },
             "require-dev": {
                 "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^9.0"
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -1160,7 +1157,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "4.9-dev"
                 }
             },
             "autoload": {
@@ -1184,9 +1181,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.19.4"
             },
-            "time": "2024-12-30T11:07:19+00:00"
+            "time": "2024-09-29T15:01:53+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -1318,16 +1315,16 @@
         },
         {
             "name": "phpstan/php-8-stubs",
-            "version": "0.4.11",
+            "version": "0.3.111",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/php-8-stubs.git",
-                "reference": "8b29105305d85fa440ae0bce1d4d83fcdf5b47ca"
+                "reference": "0013252145df5d84112764d4ea57ed1c6f074018"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/php-8-stubs/zipball/8b29105305d85fa440ae0bce1d4d83fcdf5b47ca",
-                "reference": "8b29105305d85fa440ae0bce1d4d83fcdf5b47ca",
+                "url": "https://api.github.com/repos/phpstan/php-8-stubs/zipball/0013252145df5d84112764d4ea57ed1c6f074018",
+                "reference": "0013252145df5d84112764d4ea57ed1c6f074018",
                 "shasum": ""
             },
             "type": "library",
@@ -1344,9 +1341,9 @@
             "description": "PHP stubs extracted from php-src",
             "support": {
                 "issues": "https://github.com/phpstan/php-8-stubs/issues",
-                "source": "https://github.com/phpstan/php-8-stubs/tree/0.4.11"
+                "source": "https://github.com/phpstan/php-8-stubs/tree/0.3.111"
             },
-            "time": "2025-02-12T00:19:27+00:00"
+            "time": "2024-09-29T00:21:10+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -2416,20 +2413,20 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.2.0",
+            "version": "v6.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "446e0d146f991dde3e73f45f2c97a9faad773c82"
+                "reference": "73a5e66ea2e1677c98d4449177c5a9cf9d8b4c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/446e0d146f991dde3e73f45f2c97a9faad773c82",
-                "reference": "446e0d146f991dde3e73f45f2c97a9faad773c82",
+                "url": "https://api.github.com/repos/symfony/string/zipball/73a5e66ea2e1677c98d4449177c5a9cf9d8b4c6f",
+                "reference": "73a5e66ea2e1677c98d4449177c5a9cf9d8b4c6f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
+                "php": ">=8.1",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
@@ -2439,12 +2436,11 @@
                 "symfony/translation-contracts": "<2.5"
             },
             "require-dev": {
-                "symfony/emoji": "^7.1",
-                "symfony/error-handler": "^6.4|^7.0",
-                "symfony/http-client": "^6.4|^7.0",
-                "symfony/intl": "^6.4|^7.0",
+                "symfony/error-handler": "^5.4|^6.0|^7.0",
+                "symfony/http-client": "^5.4|^6.0|^7.0",
+                "symfony/intl": "^6.2|^7.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
-                "symfony/var-exporter": "^6.4|^7.0"
+                "symfony/var-exporter": "^5.4|^6.0|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -2483,7 +2479,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v7.2.0"
+                "source": "https://github.com/symfony/string/tree/v6.4.15"
             },
             "funding": [
                 {
@@ -2499,22 +2495,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-13T13:31:26+00:00"
+            "time": "2024-11-13T13:31:12+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "apigen/apigen": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0",
         "ext-json": "*",
         "ext-pdo": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
