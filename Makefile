@@ -43,7 +43,7 @@ help: ## Listar comandos disponibles en este Makefile
 
 
 # BUILD COMMANDS -------------------------------------------------------------------------------------------------------
-build: build-container composer-install ## Construye las dependencias del proyecto
+build: build-container composer-install dot-env ## Construye las dependencias del proyecto
 
 build-container: ## Construye el contenedor de la aplicación
 	docker build --no-cache --target development -t $(IMAGE_NAME):$(IMAGE_TAG_DEV) .
@@ -60,5 +60,28 @@ composer-require: ## Añade nuevas dependencias de producción
 composer-require-dev: ## Añade nuevas dependencias de desarrollo
 	docker run --rm -ti -v ${PWD}/app:/app -w /app $(IMAGE_NAME):$(IMAGE_TAG_DEV) composer require --dev --verbose
 
-docs: ## Genera la documentación de la API
-	docker run --rm -v ${PWD}/app:/app -w /app $(IMAGE_NAME):$(IMAGE_TAG_DEV) vendor/bin/apigen src --output public/docs
+composer-dump-autoload: ## Genera el autoload de composer
+	docker run --rm -v ${PWD}/app:/app -w /app $(IMAGE_NAME):$(IMAGE_TAG_DEV) composer dump-autoload --verbose
+
+dot-env: ## Copia el archivo .env.dist a .env
+	@if [ ! -f app/.env ]; then \
+		cp app/.env.dist app/.env; \
+		echo "Archivo .env creado con éxito"; \
+	else \
+		echo "Archivo .env ya existe"; \
+	fi
+
+test: ## Ejecuta los test
+	docker compose exec php vendor/bin/phpunit --colors=always test --testdox
+
+test-unit : ## Ejecuta los test unitarios
+	docker compose exec php vendor/bin/phpunit --colors=always test --testdox --group unit
+
+test-group-%: ## Ejecuta los test de un grupo
+	docker compose exec php vendor/bin/phpunit --colors=always test --testdox --group $*
+
+test-coverage: ## Ejecuta los test y genera el coverage
+	docker compose exec php vendor/bin/phpunit --colors=always test --testdox --coverage-html test/coverage
+
+docs: ## Genera la documentación de la API con ApiGen
+	docker compose exec php mkdir -p /var/www/generate && docker compose exec php vendor/bin/apigen generate -o /var/www/docs/api --working-dir /var/www --workers 1 src

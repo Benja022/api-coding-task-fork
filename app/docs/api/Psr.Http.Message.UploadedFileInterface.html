@@ -1,0 +1,443 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Psr\Http\Message\UploadedFileInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.html">Character</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Psr.html">Psr</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Psr.Http.html">Http</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Psr.Http.Message.html">Message</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Psr.Http.Message.MessageInterface.html">
+							MessageInterface
+						</a>
+					</li>
+					<li>
+						<a href="Psr.Http.Message.RequestInterface.html">
+							RequestInterface
+						</a>
+					</li>
+					<li>
+						<a href="Psr.Http.Message.ResponseInterface.html">
+							ResponseInterface
+						</a>
+					</li>
+					<li>
+						<a href="Psr.Http.Message.ServerRequestInterface.html">
+							ServerRequestInterface
+						</a>
+					</li>
+					<li>
+						<a href="Psr.Http.Message.StreamInterface.html">
+							StreamInterface
+						</a>
+					</li>
+					<li class="active">
+						<a href="Psr.Http.Message.UploadedFileInterface.html">
+							UploadedFileInterface
+						</a>
+					</li>
+					<li>
+						<a href="Psr.Http.Message.UriInterface.html">
+							UriInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Psr.Http.Message.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Psr.Http.Message.UploadedFileInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Psr.html">Psr</a>\<a href="namespace-Psr.Http.html">Http</a>\<a href="namespace-Psr.Http.Message.html">Message</a>\<a href="Psr.Http.Message.UploadedFileInterface.html">UploadedFileInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Value object representing a file uploaded through an HTTP request.</p>
+<p>Instances of this interface are considered immutable; all methods that
+might change state MUST be implemented such that they retain the internal
+state of the current instance and return an instance that contains the
+changed state.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getStream" id="_getStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStream(): <a href="Psr.Http.Message.StreamInterface.html"><span title="Psr\Http\Message\StreamInterface">StreamInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a stream representing the uploaded file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a stream representing the uploaded file.</p>
+<p>This method MUST return a StreamInterface instance, representing the
+uploaded file. The purpose of this method is to allow utilizing native PHP
+stream functionality to manipulate the file upload, such as
+stream_copy_to_stream() (though the result will need to be decorated in a
+native PHP stream wrapper to work with such functions).</p>
+<p>If the moveTo() method has been called previously, this method MUST raise
+an exception.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Stream representation of the uploaded file.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>in cases when no stream is available or can be
+created.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="moveTo" id="_moveTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>moveTo(<span>string <var>$targetPath</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Move the uploaded file to a new location.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Move the uploaded file to a new location.</p>
+<p>Use this method as an alternative to move_uploaded_file(). This method is
+guaranteed to work in both SAPI and non-SAPI environments.
+Implementations must determine which environment they are in, and use the
+appropriate method (move_uploaded_file(), rename(), or a stream
+operation) to perform the operation.</p>
+<p>$targetPath may be an absolute path, or a relative path. If it is a
+relative path, resolution should be the same as used by PHP's rename()
+function.</p>
+<p>The original file or stream MUST be removed on completion.</p>
+<p>If this method is called more than once, any subsequent calls MUST raise
+an exception.</p>
+<p>When used in an SAPI environment where $_FILES is populated, when writing
+files via moveTo(), is_uploaded_file() and move_uploaded_file() SHOULD be
+used to ensure permissions and upload status are verified correctly.</p>
+<p>If you wish to move to a stream, use getStream(), as SAPI operations
+cannot guarantee writing to stream destinations.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$targetPath</var>&nbsp;&nbsp;</td>
+										<td><p>Path to which to move the uploaded file.</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if the $targetPath specified is invalid.</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>on any error during the move operation, or on
+the second or subsequent call to the method.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_moveTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSize" id="_getSize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSize(): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the file size.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the file size.</p>
+<p>Implementations SHOULD return the value stored in the &quot;size&quot; key of
+the file in the $_FILES array if available, as PHP calculates this based
+on the actual size transmitted.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The file size in bytes or null if unknown.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getError" id="_getError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getError(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the error associated with the uploaded file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the error associated with the uploaded file.</p>
+<p>The return value MUST be one of PHP's UPLOAD_ERR_XXX constants.</p>
+<p>If the file was uploaded successfully, this method MUST return
+UPLOAD_ERR_OK.</p>
+<p>Implementations SHOULD return the value stored in the &quot;error&quot; key of
+the file in the $_FILES array.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>One of PHP's UPLOAD_ERR_XXX constants.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClientFilename" id="_getClientFilename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClientFilename(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the filename sent by the client.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the filename sent by the client.</p>
+<p>Do not trust the value returned by this method. A client could send
+a malicious filename with the intention to corrupt or hack your
+application.</p>
+<p>Implementations SHOULD return the value stored in the &quot;name&quot; key of
+the file in the $_FILES array.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The filename sent by the client or null if none
+was provided.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClientFilename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClientMediaType" id="_getClientMediaType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClientMediaType(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the media type sent by the client.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the media type sent by the client.</p>
+<p>Do not trust the value returned by this method. A client could send
+a malicious media type with the intention to corrupt or hack your
+application.</p>
+<p>Implementations SHOULD return the value stored in the &quot;type&quot; key of
+the file in the $_FILES array.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The media type sent by the client or null if none
+was provided.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClientMediaType">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

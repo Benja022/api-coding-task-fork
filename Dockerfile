@@ -1,21 +1,25 @@
-FROM php:8-fpm-alpine3.15 AS base
+FROM php:8.2-fpm-alpine AS base
 
 RUN apk --update add \
     alpine-sdk \
     linux-headers \
     openssl-dev \
-    php8-pear \
-    php8-dev
+    php82-pear \
+    php82-dev
 
 RUN docker-php-ext-install pdo_mysql
 
 RUN rm -rf /var/cache/apk/*
 
+RUN pecl install redis
+
+RUN docker-php-ext-enable redis
+
 EXPOSE 9000
 
 FROM base AS development
 
-ENV TZ ${TZ}
+ENV TZ=UTC
 
 RUN pecl channel-update pecl.php.net
 

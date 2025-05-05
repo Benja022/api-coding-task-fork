@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Psr\Http\Server\MiddlewareInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.html">Character</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Psr.html">Psr</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Psr.Http.html">Http</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Psr.Http.Server.html">Server</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Psr.Http.Server.MiddlewareInterface.html">
+							MiddlewareInterface
+						</a>
+					</li>
+					<li>
+						<a href="Psr.Http.Server.RequestHandlerInterface.html">
+							RequestHandlerInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Psr.Http.Server.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Psr.Http.Server.MiddlewareInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Psr.html">Psr</a>\<a href="namespace-Psr.Http.html">Http</a>\<a href="namespace-Psr.Http.Server.html">Server</a>\<a href="Psr.Http.Server.MiddlewareInterface.html">MiddlewareInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Participant in processing a server request and response.</p>
+<p>An HTTP middleware component participates in processing an HTTP message:
+by acting on the request, generating the response, or forwarding the
+request to a subsequent middleware and possibly acting on its response.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Psr\Http\Server\MiddlewareInterface</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="App.Shared.Infrastructure.Exception.Http.ErrorHandlerMiddleware.html"><span>App\Shared\Infrastructure\Exception\Http\ErrorHandlerMiddleware</span></a>
+
+		implements
+			<b><span class="active" title="Psr\Http\Server\MiddlewareInterface">MiddlewareInterface</span></b>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="process" id="_process">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>process(<span><a href="Psr.Http.Message.ServerRequestInterface.html"><span title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</span></a> <var>$request</var></span>, <span><a href="Psr.Http.Server.RequestHandlerInterface.html"><span title="Psr\Http\Server\RequestHandlerInterface">RequestHandlerInterface</span></a> <var>$handler</var></span>): <a href="Psr.Http.Message.ResponseInterface.html"><span title="Psr\Http\Message\ResponseInterface">ResponseInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Process an incoming server request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Process an incoming server request.</p>
+<p>Processes an incoming server request in order to produce a response.
+If unable to produce the response itself, it may delegate to the provided
+request handler to do so.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="App.Shared.Infrastructure.Exception.Http.ErrorHandlerMiddleware.html#_process">						<code>App\Shared\Infrastructure\Exception\Http\ErrorHandlerMiddleware::process()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_process">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

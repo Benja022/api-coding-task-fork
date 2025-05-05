@@ -1,63 +1,32 @@
 <?php
 
-header('Content-Type: application/json');
+use Slim\Factory\AppFactory;
+use Slim\Middleware\BodyParsingMiddleware;
 
-require_once __DIR__ . '/../src/bootstrap.php';
+/* Alternativa a BodyParsingMiddleware sería usar: $data->json_decode(file_get_contents('php://input'), true);
+habria que ponerlo en el controlador*/
 
-// Parse URL and method
-$requestMethod = $_SERVER['REQUEST_METHOD'];
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$uri = explode('/', trim($uri, '/'));
+require __DIR__ . '/../vendor/autoload.php';
 
-// Basic routing
-$resource = $uri[0] ?? '';
-$id = $uri[1] ?? null;
+// Load environment variables
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
-// Route handling
-try {
-    switch ($resource) {
-        case 'characters':
-            $controller = new \App\Controllers\CharacterController();
-            
-            switch ($requestMethod) {
-                case 'POST':
-                    $controller->create();
-                    break;
-                default:
-                    throw new \Exception('Método no permitido', 405);
-            }
-            break;
-            
-        case 'equipments':
-            $controller = new \App\Controllers\EquipmentController();
-            
-            switch ($requestMethod) {
-                case 'POST':
-                    $controller->create();
-                    break;
-                default:
-                    throw new \Exception('Método no permitido', 405);
-            }
-            break;
+// Create Container
+$containerBuilder = new DI\ContainerBuilder();
 
-        case 'factions':
-            $controller = new \App\Controllers\FactionController();
-            
-            switch ($requestMethod) {
-                case 'POST':
-                    $controller->create();
-                    break;
-                default:
-                    throw new \Exception('Método no permitido', 405);
-            }
-            break;
-            
-        default:
-            throw new \Exception('Recurso no encontrado', 404);
-    }
-} catch (\Exception $e) {
-    http_response_code($e->getCode() ?: 500);
-    echo json_encode([
-        'error' => $e->getMessage()
-    ]);
-}
+$definitions = require __DIR__ . '/../config/definitions.php';
+$definitions($containerBuilder);
+
+$container = $containerBuilder->build();
+
+$app = AppFactory::create(container: $container);
+
+$routes = require __DIR__ . '/../config/routes.php';
+$routes($app);
+
+// Add middleware to parse the body of the request as JSON
+$app->add(new BodyParsingMiddleware());
+
+// Run the application
+$app->run();

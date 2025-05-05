@@ -1,0 +1,357 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class App\Character\Infrastructure\Persistence\Cache\CachedMySQLCharacterRepository |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.html">Character</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Application.html">Application</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Domain.html">Domain</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.Infrastructure.html">Infrastructure</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Infrastructure.Http.html">Http</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.Infrastructure.Persistence.html">Persistence</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.Infrastructure.Persistence.Cache.html">Cache</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Infrastructure.Persistence.InMemory.html">InMemory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Infrastructure.Persistence.Pdo.html">Pdo</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="App.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html">
+							CachedMySQLCharacterRepository
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-App.Character.Infrastructure.Persistence.Cache.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="App.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-App.html">App</a>\<a href="namespace-App.Character.html">Character</a>\<a href="namespace-App.Character.Infrastructure.html">Infrastructure</a>\<a href="namespace-App.Character.Infrastructure.Persistence.html">Persistence</a>\<a href="namespace-App.Character.Infrastructure.Persistence.Cache.html">Cache</a>\<a href="App.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html">CachedMySQLCharacterRepository</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="App.Character.Domain.CharacterRepository.html"><span title="App\Character\Domain\CharacterRepository">CharacterRepository</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>This class is a wrapper around the MySQLCharacterRepository.
+It caches the results of the findAll, find save and methods.
+It uses a Redis instance to cache the results.
+It also uses a LoggerInterface to log the cache hits and misses.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-src.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html#18" title="Go to source code">src/Character/Infrastructure/Persistence/Cache/CachedMySQLCharacterRepository.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html#23-27" title="Go to source code">__construct</a>(<span><a href="App.Character.Infrastructure.Persistence.Pdo.MySQLCharacterRepository.html"><span title="App\Character\Infrastructure\Persistence\Pdo\MySQLCharacterRepository">MySQLCharacterRepository</span></a> <var>$mySQLCharacterRepository</var></span>, <span><a href="Redis.html"><span title="Redis">Redis</span></a> <var>$redis</var></span>, <span>?<a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a> <var>$logger</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="find" id="_find">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html#38-57" title="Go to source code">find</a>(<span>int <var>$id</var></span>): ?<a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		This method finds a character by its id.
+It first checks if the character is cached in Redis.
+If it is, it returns the…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method finds a character by its id.
+It first checks if the character is cached in Redis.
+If it is, it returns the cached character.
+If it is not, it fetches the character from the MySQL database, caches it in Redis and returns it.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_find">						<code>App\Character\Domain\CharacterRepository::find()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_find">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findAll" id="_findAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html#59-78" title="Go to source code">findAll</a>(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		This method finds all characters.
+It first checks if the characters are cached in Redis.
+If they are, it returns the…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method finds all characters.
+It first checks if the characters are cached in Redis.
+If they are, it returns the cached characters.
+If they are not, it fetches the characters from the MySQL database, caches them in Redis and returns them.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_findAll">						<code>App\Character\Domain\CharacterRepository::findAll()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="save" id="_save">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html#80-107" title="Go to source code">save</a>(<span><a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a> <var>$character</var></span>): <a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		This method saves and updates a character.
+It first checks if the character is already in the MySQL database.
+If it is,…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method saves and updates a character.
+It first checks if the character is already in the MySQL database.
+If it is, it updates the character.
+If it is not, it saves the character.
+Then it caches the character in Redis.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_save">						<code>App\Character\Domain\CharacterRepository::save()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_save">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.Cache.CachedMySQLCharacterRepository.html#110-122" title="Go to source code">delete</a>(<span><a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a> <var>$character</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		This method deletes a character.
+It first deletes the character from the MySQL database.
+Then it deletes the character…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method deletes a character.
+It first deletes the character from the MySQL database.
+Then it deletes the character from the Redis cache.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_delete">						<code>App\Character\Domain\CharacterRepository::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

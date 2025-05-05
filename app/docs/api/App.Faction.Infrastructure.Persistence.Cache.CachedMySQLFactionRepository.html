@@ -1,0 +1,314 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class App\Faction\Infrastructure\Persistence\Cache\CachedMySQLFactionRepository |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.html">Character</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Faction.html">Faction</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.Application.html">Application</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.Domain.html">Domain</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Faction.Infrastructure.html">Infrastructure</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.Infrastructure.Http.html">Http</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Faction.Infrastructure.Persistence.html">Persistence</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Faction.Infrastructure.Persistence.Cache.html">Cache</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.Infrastructure.Persistence.InMemory.html">InMemory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.Infrastructure.Persistence.Pdo.html">Pdo</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="App.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html">
+							CachedMySQLFactionRepository
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-App.Faction.Infrastructure.Persistence.Cache.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="App.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-App.html">App</a>\<a href="namespace-App.Faction.html">Faction</a>\<a href="namespace-App.Faction.Infrastructure.html">Infrastructure</a>\<a href="namespace-App.Faction.Infrastructure.Persistence.html">Persistence</a>\<a href="namespace-App.Faction.Infrastructure.Persistence.Cache.html">Cache</a>\<a href="App.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html">CachedMySQLFactionRepository</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="App.Faction.Domain.FactionRepository.html"><span title="App\Faction\Domain\FactionRepository">FactionRepository</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>CachedMySQLFactionRepository es una clase que se utiliza para cachear el repositorio de facciones.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-src.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html#17" title="Go to source code">src/Faction/Infrastructure/Persistence/Cache/CachedMySQLFactionRepository.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html#19-29" title="Go to source code">__construct</a>(<span><a href="App.Faction.Infrastructure.Persistence.Pdo.MySQLFactionRepository.html"><span title="App\Faction\Infrastructure\Persistence\Pdo\MySQLFactionRepository">MySQLFactionRepository</span></a> <var>$repository</var></span>, <span><a href="Redis.html"><span title="Redis">Redis</span></a> <var>$redis</var></span>, <span><a href="Psr.Log.LoggerInterface.html"><span title="Psr\Log\LoggerInterface">LoggerInterface</span></a> <var>$logger</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="find" id="_find">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html#31-54" title="Go to source code">find</a>(<span>int <var>$id</var></span>): <a href="App.Faction.Domain.Faction.html"><span title="App\Faction\Domain\Faction">Faction</span></a>|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Faction.Domain.FactionRepository.html#_find">						<code>App\Faction\Domain\FactionRepository::find()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_find">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findAll" id="_findAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html#56-78" title="Go to source code">findAll</a>(): array&lt;<a href="App.Faction.Domain.Faction.html"><span title="App\Faction\Domain\Faction">Faction</span></a>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Faction.Domain.FactionRepository.html#_findAll">						<code>App\Faction\Domain\FactionRepository::findAll()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="save" id="_save">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html#80-95" title="Go to source code">save</a>(<span><a href="App.Faction.Domain.Faction.html"><span title="App\Faction\Domain\Faction">Faction</span></a> <var>$faction</var></span>): <a href="App.Faction.Domain.Faction.html"><span title="App\Faction\Domain\Faction">Faction</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Faction.Domain.FactionRepository.html#_save">						<code>App\Faction\Domain\FactionRepository::save()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_save">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Faction.Infrastructure.Persistence.Cache.CachedMySQLFactionRepository.html#97-113" title="Go to source code">delete</a>(<span><a href="App.Faction.Domain.Faction.html"><span title="App\Faction\Domain\Faction">Faction</span></a> <var>$faction</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Faction.Domain.FactionRepository.html#_delete">						<code>App\Faction\Domain\FactionRepository::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

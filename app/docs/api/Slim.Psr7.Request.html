@@ -1,0 +1,1372 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Slim\Psr7\Request |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.html">Character</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.html">Slim</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.Psr7.html">Psr7</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Slim.Psr7.Message.html">
+							Message
+						</a>
+					</li>
+					<li class="active">
+						<a href="Slim.Psr7.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Slim.Psr7.Response.html">
+							Response
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Slim.Psr7.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Slim.Psr7.Request.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Slim.html">Slim</a>\<a href="namespace-Slim.Psr7.html">Psr7</a>\<a href="Slim.Psr7.Request.html">Request</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Slim.Psr7.Message.html"><span title="Slim\Psr7\Message">Message</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Psr.Http.Message.ServerRequestInterface.html"><span title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Slim.Psr7.Message.html"><span>Slim\Psr7\Message</span></a>
+
+		implements
+			<a href="Psr.Http.Message.MessageInterface.html"><span title="Psr\Http\Message\MessageInterface">MessageInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Slim\Psr7\Request</span></b>
+
+		implements
+			<a href="Psr.Http.Message.ServerRequestInterface.html"><span title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>string <var>$method</var></span>,
+	<span><a href="Psr.Http.Message.UriInterface.html"><span title="Psr\Http\Message\UriInterface">UriInterface</span></a> <var>$uri</var></span>,
+	<span><a href="Slim.Psr7.Interfaces.HeadersInterface.html"><span title="Slim\Psr7\Interfaces\HeadersInterface">HeadersInterface</span></a> <var>$headers</var></span>,
+	<span>array <var>$cookies</var></span>,
+	<span>array <var>$serverParams</var></span>,
+	<span><a href="Psr.Http.Message.StreamInterface.html"><span title="Psr\Http\Message\StreamInterface">StreamInterface</span></a> <var>$body</var></span>,
+	<span>array <var>$uploadedFiles</var> = []</span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$method</var>&nbsp;&nbsp;</td>
+										<td><p>The request method</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$uri</var>&nbsp;&nbsp;</td>
+										<td><p>The request URI object</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$headers</var>&nbsp;&nbsp;</td>
+										<td><p>The request headers collection</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>The request cookies collection</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$serverParams</var>&nbsp;&nbsp;</td>
+										<td><p>The server environment variables</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$body</var>&nbsp;&nbsp;</td>
+										<td><p>The request body object</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$uploadedFiles</var>&nbsp;&nbsp;</td>
+										<td><p>The request uploadedFiles collection</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>on invalid HTTP method</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone()</code>
+
+
+	<div class="expandable-collapsedView">
+		This method is applied to the cloned object after PHP performs an initial shallow-copy.
+This method completes a deep…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method is applied to the cloned object after PHP performs an initial shallow-copy.
+This method completes a deep-copy by creating new objects for the cloned object's internal reference pointers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMethod" id="_getMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMethod(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Returns the request method.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.RequestInterface.html#_getMethod">						<code>Psr\Http\Message\RequestInterface::getMethod()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withMethod" id="_withMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withMethod(<span><var>$method</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$method</var>&nbsp;&nbsp;</td>
+										<td><p>Case-sensitive method.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.RequestInterface.html#_withMethod">						<code>Psr\Http\Message\RequestInterface::withMethod()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filterMethod" id="_filterMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filterMethod(<span>string <var>$method</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Validate the HTTP method
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validate the HTTP method</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>on invalid HTTP method.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filterMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRequestTarget" id="_getRequestTarget">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRequestTarget(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.RequestInterface.html#_getRequestTarget">						<code>Psr\Http\Message\RequestInterface::getRequestTarget()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRequestTarget">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withRequestTarget" id="_withRequestTarget">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withRequestTarget(<span><var>$requestTarget</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.RequestInterface.html#_withRequestTarget">						<code>Psr\Http\Message\RequestInterface::withRequestTarget()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withRequestTarget">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUri" id="_getUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUri(): <a href="Psr.Http.Message.UriInterface.html"><span title="Psr\Http\Message\UriInterface">UriInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Returns a UriInterface instance
+representing the URI of the request.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.RequestInterface.html#_getUri">						<code>Psr\Http\Message\RequestInterface::getUri()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withUri" id="_withUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withUri(<span><a href="Psr.Http.Message.UriInterface.html"><span title="Psr\Http\Message\UriInterface">UriInterface</span></a> <var>$uri</var></span>, <span><var>$preserveHost</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$uri</var>&nbsp;&nbsp;</td>
+										<td><p>New request URI to use.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$preserveHost</var>&nbsp;&nbsp;</td>
+										<td><p>Preserve the original state of the Host header.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.RequestInterface.html#_withUri">						<code>Psr\Http\Message\RequestInterface::withUri()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCookieParams" id="_getCookieParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCookieParams(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getCookieParams">						<code>Psr\Http\Message\ServerRequestInterface::getCookieParams()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCookieParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withCookieParams" id="_withCookieParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withCookieParams(<span>array <var>$cookies</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>Array of key/value pairs representing cookies.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_withCookieParams">						<code>Psr\Http\Message\ServerRequestInterface::withCookieParams()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withCookieParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueryParams" id="_getQueryParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueryParams(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getQueryParams">						<code>Psr\Http\Message\ServerRequestInterface::getQueryParams()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueryParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withQueryParams" id="_withQueryParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withQueryParams(<span>array <var>$query</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$query</var>&nbsp;&nbsp;</td>
+										<td><p>Array of query string arguments, typically from
+$_GET.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_withQueryParams">						<code>Psr\Http\Message\ServerRequestInterface::withQueryParams()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withQueryParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUploadedFiles" id="_getUploadedFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUploadedFiles(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>An array tree of UploadedFileInterface instances; an empty
+array MUST be returned if no data is present.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getUploadedFiles">						<code>Psr\Http\Message\ServerRequestInterface::getUploadedFiles()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUploadedFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withUploadedFiles" id="_withUploadedFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withUploadedFiles(<span>array <var>$uploadedFiles</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$uploadedFiles</var>&nbsp;&nbsp;</td>
+										<td><p>An array tree of UploadedFileInterface instances.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_withUploadedFiles">						<code>Psr\Http\Message\ServerRequestInterface::withUploadedFiles()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withUploadedFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getServerParams" id="_getServerParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getServerParams(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getServerParams">						<code>Psr\Http\Message\ServerRequestInterface::getServerParams()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getServerParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributes" id="_getAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributes(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Attributes derived from the request.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getAttributes">						<code>Psr\Http\Message\ServerRequestInterface::getAttributes()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttribute" id="_getAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttribute(<span><var>$name</var></span>, <span><var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The attribute name.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>Default value to return if the attribute does not exist.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getAttribute">						<code>Psr\Http\Message\ServerRequestInterface::getAttribute()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withAttribute" id="_withAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withAttribute(<span><var>$name</var></span>, <span><var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The attribute name.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>The value of the attribute.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_withAttribute">						<code>Psr\Http\Message\ServerRequestInterface::withAttribute()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutAttribute" id="_withoutAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutAttribute(<span><var>$name</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The attribute name.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_withoutAttribute">						<code>Psr\Http\Message\ServerRequestInterface::withoutAttribute()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParsedBody" id="_getParsedBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getParsedBody()</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The deserialized body parameters, if any.
+These will typically be an array or object.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_getParsedBody">						<code>Psr\Http\Message\ServerRequestInterface::getParsedBody()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParsedBody">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withParsedBody" id="_withParsedBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withParsedBody(<span><var>$data</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>The deserialized body data. This will
+typically be in an array or object.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ServerRequestInterface.html#_withParsedBody">						<code>Psr\Http\Message\ServerRequestInterface::withParsedBody()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withParsedBody">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Slim.Psr7.Message.html"><span>Slim\Psr7\Message</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Slim.Psr7.Message.html#___set">__set()</a>, <a href="Slim.Psr7.Message.html#_getProtocolVersion">getProtocolVersion()</a>, <a href="Slim.Psr7.Message.html#_withProtocolVersion">withProtocolVersion()</a>, <a href="Slim.Psr7.Message.html#_getHeaders">getHeaders()</a>, <a href="Slim.Psr7.Message.html#_hasHeader">hasHeader()</a>, <a href="Slim.Psr7.Message.html#_getHeader">getHeader()</a>, <a href="Slim.Psr7.Message.html#_getHeaderLine">getHeaderLine()</a>, <a href="Slim.Psr7.Message.html#_withHeader">withHeader()</a>, <a href="Slim.Psr7.Message.html#_withAddedHeader">withAddedHeader()</a>, <a href="Slim.Psr7.Message.html#_withoutHeader">withoutHeader()</a>, <a href="Slim.Psr7.Message.html#_getBody">getBody()</a>, <a href="Slim.Psr7.Message.html#_withBody">withBody()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="method" id="$method">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$method</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$method">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uri" id="$uri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Psr.Http.Message.UriInterface.html"><span title="Psr\Http\Message\UriInterface">UriInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$uri</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$uri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requestTarget" id="$requestTarget">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$requestTarget</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$requestTarget">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryParams" id="$queryParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$queryParams</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$queryParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cookies" id="$cookies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$cookies</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$cookies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serverParams" id="$serverParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$serverParams</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$serverParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributes" id="$attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributes</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parsedBody" id="$parsedBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">null|array|object</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$parsedBody</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$parsedBody">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uploadedFiles" id="$uploadedFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Psr.Http.Message.UploadedFileInterface.html"><span title="Psr\Http\Message\UploadedFileInterface">UploadedFileInterface</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$uploadedFiles</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$uploadedFiles">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Slim.Psr7.Message.html"><span>Slim\Psr7\Message</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Slim.Psr7.Message.html#$protocolVersion">$protocolVersion</a></var>, <var><a href="Slim.Psr7.Message.html#$validProtocolVersions">$validProtocolVersions</a></var>, <var><a href="Slim.Psr7.Message.html#$headers">$headers</a></var>, <var><a href="Slim.Psr7.Message.html#$body">$body</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

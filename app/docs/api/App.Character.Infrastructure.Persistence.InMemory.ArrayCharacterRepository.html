@@ -1,0 +1,314 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class App\Character\Infrastructure\Persistence\InMemory\ArrayCharacterRepository |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.html">Character</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Application.html">Application</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Domain.html">Domain</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.Infrastructure.html">Infrastructure</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Infrastructure.Http.html">Http</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.Infrastructure.Persistence.html">Persistence</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Infrastructure.Persistence.Cache.html">Cache</a>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-App.Character.Infrastructure.Persistence.InMemory.html">InMemory</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.Infrastructure.Persistence.Pdo.html">Pdo</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="App.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html">
+							ArrayCharacterRepository
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-App.Character.Infrastructure.Persistence.InMemory.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="App.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-App.html">App</a>\<a href="namespace-App.Character.html">Character</a>\<a href="namespace-App.Character.Infrastructure.html">Infrastructure</a>\<a href="namespace-App.Character.Infrastructure.Persistence.html">Persistence</a>\<a href="namespace-App.Character.Infrastructure.Persistence.InMemory.html">InMemory</a>\<a href="App.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html">ArrayCharacterRepository</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="App.Character.Domain.CharacterRepository.html"><span title="App\Character\Domain\CharacterRepository">CharacterRepository</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>ArrayCharacterRepository is a repository that manages characters in memory.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-src.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html#16" title="Go to source code">src/Character/Infrastructure/Persistence/InMemory/ArrayCharacterRepository.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html#18-20" title="Go to source code">__construct</a>(<span>array <var>$characters</var> = []</span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="find" id="_find">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html#22-28" title="Go to source code">find</a>(<span>int <var>$id</var></span>): ?<a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_find">						<code>App\Character\Domain\CharacterRepository::find()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_find">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="save" id="_save">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html#30-49" title="Go to source code">save</a>(<span><a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a> <var>$character</var></span>): <a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_save">						<code>App\Character\Domain\CharacterRepository::save()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_save">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findAll" id="_findAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html#51-54" title="Go to source code">findAll</a>(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_findAll">						<code>App\Character\Domain\CharacterRepository::findAll()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-src.Character.Infrastructure.Persistence.InMemory.ArrayCharacterRepository.html#56-60" title="Go to source code">delete</a>(<span><a href="App.Character.Domain.Character.html"><span title="App\Character\Domain\Character">Character</span></a> <var>$character</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="App.Character.Domain.CharacterRepository.html#_delete">						<code>App\Character\Domain\CharacterRepository::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

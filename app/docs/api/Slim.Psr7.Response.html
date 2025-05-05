@@ -1,0 +1,644 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Slim\Psr7\Response |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.html">Character</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.html">Slim</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.Psr7.html">Psr7</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Slim.Psr7.Message.html">
+							Message
+						</a>
+					</li>
+					<li>
+						<a href="Slim.Psr7.Request.html">
+							Request
+						</a>
+					</li>
+					<li class="active">
+						<a href="Slim.Psr7.Response.html">
+							Response
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Slim.Psr7.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Slim.Psr7.Response.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Slim.html">Slim</a>\<a href="namespace-Slim.Psr7.html">Psr7</a>\<a href="Slim.Psr7.Response.html">Response</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Slim.Psr7.Message.html"><span title="Slim\Psr7\Message">Message</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Psr.Http.Message.ResponseInterface.html"><span title="Psr\Http\Message\ResponseInterface">ResponseInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Slim.Psr7.Message.html"><span>Slim\Psr7\Message</span></a>
+
+		implements
+			<a href="Psr.Http.Message.MessageInterface.html"><span title="Psr\Http\Message\MessageInterface">MessageInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Slim\Psr7\Response</span></b>
+
+		implements
+			<a href="Psr.Http.Message.ResponseInterface.html"><span title="Psr\Http\Message\ResponseInterface">ResponseInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>int <var>$status</var> = <a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_OK">STATUS_OK</a></span>,
+	<span><a href="Slim.Psr7.Interfaces.HeadersInterface.html"><span title="Slim\Psr7\Interfaces\HeadersInterface">HeadersInterface</span></a>|null <var>$headers</var> = <span class="php-kw">null</span></span>,
+	<span><a href="Psr.Http.Message.StreamInterface.html"><span title="Psr\Http\Message\StreamInterface">StreamInterface</span></a>|null <var>$body</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$status</var>&nbsp;&nbsp;</td>
+										<td><p>The response status code.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$headers</var>&nbsp;&nbsp;</td>
+										<td><p>The response headers.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$body</var>&nbsp;&nbsp;</td>
+										<td><p>The response body.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone()</code>
+
+
+	<div class="expandable-collapsedView">
+		This method is applied to the cloned object after PHP performs an initial shallow-copy.
+This method completes a deep…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method is applied to the cloned object after PHP performs an initial shallow-copy.
+This method completes a deep-copy by creating new objects for the cloned object's internal reference pointers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStatusCode" id="_getStatusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStatusCode(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Status code.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ResponseInterface.html#_getStatusCode">						<code>Psr\Http\Message\ResponseInterface::getStatusCode()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStatusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withStatus" id="_withStatus">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withStatus(<span><var>$code</var></span>, <span><var>$reasonPhrase</var> = <span class="php-str">''</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$code</var>&nbsp;&nbsp;</td>
+										<td><p>The 3-digit integer result code to set.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$reasonPhrase</var>&nbsp;&nbsp;</td>
+										<td><p>The reason phrase to use with the
+provided status code; if none is provided, implementations MAY
+use the defaults as suggested in the HTTP specification.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ResponseInterface.html#_withStatus">						<code>Psr\Http\Message\ResponseInterface::withStatus()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withStatus">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getReasonPhrase" id="_getReasonPhrase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getReasonPhrase(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Reason phrase; must return an empty string if none present.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Http.Message.ResponseInterface.html#_getReasonPhrase">						<code>Psr\Http\Message\ResponseInterface::getReasonPhrase()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getReasonPhrase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filterStatus" id="_filterStatus">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filterStatus(<span>int <var>$status</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter HTTP status code.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter HTTP status code.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$status</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP status code.</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>If an invalid HTTP status code is provided.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filterStatus">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filterReasonPhrase" id="_filterReasonPhrase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filterReasonPhrase(<span>mixed <var>$reasonPhrase</var> = <span class="php-str">''</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter Reason Phrase
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter Reason Phrase</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filterReasonPhrase">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Slim.Psr7.Message.html"><span>Slim\Psr7\Message</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Slim.Psr7.Message.html#___set">__set()</a>, <a href="Slim.Psr7.Message.html#_getProtocolVersion">getProtocolVersion()</a>, <a href="Slim.Psr7.Message.html#_withProtocolVersion">withProtocolVersion()</a>, <a href="Slim.Psr7.Message.html#_getHeaders">getHeaders()</a>, <a href="Slim.Psr7.Message.html#_hasHeader">hasHeader()</a>, <a href="Slim.Psr7.Message.html#_getHeader">getHeader()</a>, <a href="Slim.Psr7.Message.html#_getHeaderLine">getHeaderLine()</a>, <a href="Slim.Psr7.Message.html#_withHeader">withHeader()</a>, <a href="Slim.Psr7.Message.html#_withAddedHeader">withAddedHeader()</a>, <a href="Slim.Psr7.Message.html#_withoutHeader">withoutHeader()</a>, <a href="Slim.Psr7.Message.html#_getBody">getBody()</a>, <a href="Slim.Psr7.Message.html#_withBody">withBody()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="status" id="$status">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$status</var> = <a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_OK">STATUS_OK</a></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$status">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reasonPhrase" id="$reasonPhrase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$reasonPhrase</var> = <span class="php-str">''</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$reasonPhrase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="messages" id="$messages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$messages</var> = [
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_CONTINUE">STATUS_CONTINUE</a> =&gt; <span class="php-str">'Continue'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_SWITCHING_PROTOCOLS">STATUS_SWITCHING_PROTOCOLS</a> =&gt; <span class="php-str">'Switching Protocols'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PROCESSING">STATUS_PROCESSING</a> =&gt; <span class="php-str">'Processing'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_OK">STATUS_OK</a> =&gt; <span class="php-str">'OK'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_CREATED">STATUS_CREATED</a> =&gt; <span class="php-str">'Created'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_ACCEPTED">STATUS_ACCEPTED</a> =&gt; <span class="php-str">'Accepted'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NON_AUTHORITATIVE_INFORMATION">STATUS_NON_AUTHORITATIVE_INFORMATION</a> =&gt; <span class="php-str">'Non-Authoritative Information'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NO_CONTENT">STATUS_NO_CONTENT</a> =&gt; <span class="php-str">'No Content'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_RESET_CONTENT">STATUS_RESET_CONTENT</a> =&gt; <span class="php-str">'Reset Content'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PARTIAL_CONTENT">STATUS_PARTIAL_CONTENT</a> =&gt; <span class="php-str">'Partial Content'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_MULTI_STATUS">STATUS_MULTI_STATUS</a> =&gt; <span class="php-str">'Multi-Status'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_ALREADY_REPORTED">STATUS_ALREADY_REPORTED</a> =&gt; <span class="php-str">'Already Reported'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_IM_USED">STATUS_IM_USED</a> =&gt; <span class="php-str">'IM Used'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_MULTIPLE_CHOICES">STATUS_MULTIPLE_CHOICES</a> =&gt; <span class="php-str">'Multiple Choices'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_MOVED_PERMANENTLY">STATUS_MOVED_PERMANENTLY</a> =&gt; <span class="php-str">'Moved Permanently'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_FOUND">STATUS_FOUND</a> =&gt; <span class="php-str">'Found'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_SEE_OTHER">STATUS_SEE_OTHER</a> =&gt; <span class="php-str">'See Other'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NOT_MODIFIED">STATUS_NOT_MODIFIED</a> =&gt; <span class="php-str">'Not Modified'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_USE_PROXY">STATUS_USE_PROXY</a> =&gt; <span class="php-str">'Use Proxy'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_RESERVED">STATUS_RESERVED</a> =&gt; <span class="php-str">'(Unused)'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_TEMPORARY_REDIRECT">STATUS_TEMPORARY_REDIRECT</a> =&gt; <span class="php-str">'Temporary Redirect'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PERMANENT_REDIRECT">STATUS_PERMANENT_REDIRECT</a> =&gt; <span class="php-str">'Permanent Redirect'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_BAD_REQUEST">STATUS_BAD_REQUEST</a> =&gt; <span class="php-str">'Bad Request'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_UNAUTHORIZED">STATUS_UNAUTHORIZED</a> =&gt; <span class="php-str">'Unauthorized'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PAYMENT_REQUIRED">STATUS_PAYMENT_REQUIRED</a> =&gt; <span class="php-str">'Payment Required'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_FORBIDDEN">STATUS_FORBIDDEN</a> =&gt; <span class="php-str">'Forbidden'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NOT_FOUND">STATUS_NOT_FOUND</a> =&gt; <span class="php-str">'Not Found'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_METHOD_NOT_ALLOWED">STATUS_METHOD_NOT_ALLOWED</a> =&gt; <span class="php-str">'Method Not Allowed'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NOT_ACCEPTABLE">STATUS_NOT_ACCEPTABLE</a> =&gt; <span class="php-str">'Not Acceptable'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PROXY_AUTHENTICATION_REQUIRED">STATUS_PROXY_AUTHENTICATION_REQUIRED</a> =&gt; <span class="php-str">'Proxy Authentication Required'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_REQUEST_TIMEOUT">STATUS_REQUEST_TIMEOUT</a> =&gt; <span class="php-str">'Request Timeout'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_CONFLICT">STATUS_CONFLICT</a> =&gt; <span class="php-str">'Conflict'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_GONE">STATUS_GONE</a> =&gt; <span class="php-str">'Gone'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_LENGTH_REQUIRED">STATUS_LENGTH_REQUIRED</a> =&gt; <span class="php-str">'Length Required'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PRECONDITION_FAILED">STATUS_PRECONDITION_FAILED</a> =&gt; <span class="php-str">'Precondition Failed'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PAYLOAD_TOO_LARGE">STATUS_PAYLOAD_TOO_LARGE</a> =&gt; <span class="php-str">'Request Entity Too Large'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_URI_TOO_LONG">STATUS_URI_TOO_LONG</a> =&gt; <span class="php-str">'Request-URI Too Long'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_UNSUPPORTED_MEDIA_TYPE">STATUS_UNSUPPORTED_MEDIA_TYPE</a> =&gt; <span class="php-str">'Unsupported Media Type'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_RANGE_NOT_SATISFIABLE">STATUS_RANGE_NOT_SATISFIABLE</a> =&gt; <span class="php-str">'Requested Range Not Satisfiable'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_EXPECTATION_FAILED">STATUS_EXPECTATION_FAILED</a> =&gt; <span class="php-str">'Expectation Failed'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_IM_A_TEAPOT">STATUS_IM_A_TEAPOT</a> =&gt; <span class="php-str">'I\'m a teapot'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_MISDIRECTED_REQUEST">STATUS_MISDIRECTED_REQUEST</a> =&gt; <span class="php-str">'Misdirected Request'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_UNPROCESSABLE_ENTITY">STATUS_UNPROCESSABLE_ENTITY</a> =&gt; <span class="php-str">'Unprocessable Entity'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_LOCKED">STATUS_LOCKED</a> =&gt; <span class="php-str">'Locked'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_FAILED_DEPENDENCY">STATUS_FAILED_DEPENDENCY</a> =&gt; <span class="php-str">'Failed Dependency'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_UPGRADE_REQUIRED">STATUS_UPGRADE_REQUIRED</a> =&gt; <span class="php-str">'Upgrade Required'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_PRECONDITION_REQUIRED">STATUS_PRECONDITION_REQUIRED</a> =&gt; <span class="php-str">'Precondition Required'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_TOO_MANY_REQUESTS">STATUS_TOO_MANY_REQUESTS</a> =&gt; <span class="php-str">'Too Many Requests'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_REQUEST_HEADER_FIELDS_TOO_LARGE">STATUS_REQUEST_HEADER_FIELDS_TOO_LARGE</a> =&gt; <span class="php-str">'Request Header Fields Too Large'</span>,
+	<span class="php-num">444</span> =&gt; <span class="php-str">'Connection Closed Without Response'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_UNAVAILABLE_FOR_LEGAL_REASONS">STATUS_UNAVAILABLE_FOR_LEGAL_REASONS</a> =&gt; <span class="php-str">'Unavailable For Legal Reasons'</span>,
+	<span class="php-num">499</span> =&gt; <span class="php-str">'Client Closed Request'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_INTERNAL_SERVER_ERROR">STATUS_INTERNAL_SERVER_ERROR</a> =&gt; <span class="php-str">'Internal Server Error'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NOT_IMPLEMENTED">STATUS_NOT_IMPLEMENTED</a> =&gt; <span class="php-str">'Not Implemented'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_BAD_GATEWAY">STATUS_BAD_GATEWAY</a> =&gt; <span class="php-str">'Bad Gateway'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_SERVICE_UNAVAILABLE">STATUS_SERVICE_UNAVAILABLE</a> =&gt; <span class="php-str">'Service Unavailable'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_GATEWAY_TIMEOUT">STATUS_GATEWAY_TIMEOUT</a> =&gt; <span class="php-str">'Gateway Timeout'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_VERSION_NOT_SUPPORTED">STATUS_VERSION_NOT_SUPPORTED</a> =&gt; <span class="php-str">'HTTP Version Not Supported'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_VARIANT_ALSO_NEGOTIATES">STATUS_VARIANT_ALSO_NEGOTIATES</a> =&gt; <span class="php-str">'Variant Also Negotiates'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_INSUFFICIENT_STORAGE">STATUS_INSUFFICIENT_STORAGE</a> =&gt; <span class="php-str">'Insufficient Storage'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_LOOP_DETECTED">STATUS_LOOP_DETECTED</a> =&gt; <span class="php-str">'Loop Detected'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NOT_EXTENDED">STATUS_NOT_EXTENDED</a> =&gt; <span class="php-str">'Not Extended'</span>,
+	<a href="Fig.Http.Message.StatusCodeInterface.html"><span title="Fig\Http\Message\StatusCodeInterface">StatusCodeInterface</span></a>::<a href="Fig.Http.Message.StatusCodeInterface.html#STATUS_NETWORK_AUTHENTICATION_REQUIRED">STATUS_NETWORK_AUTHENTICATION_REQUIRED</a> =&gt; <span class="php-str">'Network Authentication Required'</span>,
+	<span class="php-num">599</span> =&gt; <span class="php-str">'Network Connect Timeout Error'</span>,
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$messages">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Slim.Psr7.Message.html"><span>Slim\Psr7\Message</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Slim.Psr7.Message.html#$protocolVersion">$protocolVersion</a></var>, <var><a href="Slim.Psr7.Message.html#$validProtocolVersions">$validProtocolVersions</a></var>, <var><a href="Slim.Psr7.Message.html#$headers">$headers</a></var>, <var><a href="Slim.Psr7.Message.html#$body">$body</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

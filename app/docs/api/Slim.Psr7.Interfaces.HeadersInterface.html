@@ -1,0 +1,373 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Slim\Psr7\Interfaces\HeadersInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.html">App</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Character.html">Character</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Equipment.html">Equipment</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Faction.html">Faction</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-App.Shared.html">Shared</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.html">Slim</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.Psr7.html">Psr7</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Slim.Psr7.Interfaces.html">Interfaces</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Slim.Psr7.Interfaces.HeadersInterface.html">
+							HeadersInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Slim.Psr7.Interfaces.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Slim.Psr7.Interfaces.HeadersInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Slim.html">Slim</a>\<a href="namespace-Slim.Psr7.html">Psr7</a>\<a href="namespace-Slim.Psr7.Interfaces.html">Interfaces</a>\<a href="Slim.Psr7.Interfaces.HeadersInterface.html">HeadersInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="addHeader" id="_addHeader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addHeader(<span>string <var>$name</var></span>, <span>array|string <var>$value</var></span>): <b><span class="active" title="Slim\Psr7\Interfaces\HeadersInterface">HeadersInterface</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add header value
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add header value</p>
+<p>This method appends the value to the existing array of values</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addHeader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeHeader" id="_removeHeader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeHeader(<span>string <var>$name</var></span>): <b><span class="active" title="Slim\Psr7\Interfaces\HeadersInterface">HeadersInterface</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Remove header value
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove header value</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeHeader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHeader" id="_getHeader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHeader(<span>string <var>$name</var></span>, <span>string[] <var>$default</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get header value or values.
+If the array has a single value it will return that single value.
+If the array has multiple…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get header value or values.
+If the array has a single value it will return that single value.
+If the array has multiple values, it will return an array of values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHeader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHeader" id="_setHeader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHeader(<span>string <var>$name</var></span>, <span>array|string <var>$value</var></span>): <b><span class="active" title="Slim\Psr7\Interfaces\HeadersInterface">HeadersInterface</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Replaces the existing header value with the new value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replaces the existing header value with the new value.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHeader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHeaders" id="_setHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHeaders(<span>array <var>$headers</var></span>): <b><span class="active" title="Slim\Psr7\Interfaces\HeadersInterface">HeadersInterface</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Replaces all existing headers with the new values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replaces all existing headers with the new values.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasHeader" id="_hasHeader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasHeader(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the header present in the stack.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the header present in the stack.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasHeader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHeaders" id="_getHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHeaders(<span>bool <var>$originalCase</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Return all headers in the stack.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return all headers in the stack.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHeaders">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>
